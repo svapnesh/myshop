@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy Shopping</title>
+
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"/>
+    </head>
+    <body style="margin-top: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center" id="productsRenderer"></div>
+
+                <div class="col" id="search_div">
+                    <div class="input-group">
+                        <div class="form-outline">
+                          <input type="search" id="search" class="form-control" placeholder="Ex. Dell"/>
+                        </div>
+                        <button type="button" id="btn_search" class="btn btn-primary">
+                            Search
+                        </button>
+                      </div>
+                </div>
+
+                <div class="col text-center" id="cartRenderer"></div>
+            </div>
+        </div>
+
+        <script src="{% static 'index.js' %}" async defer></script>
+    </body>
+</html>
